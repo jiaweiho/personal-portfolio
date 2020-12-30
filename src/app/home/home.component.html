@@ -1,1 +1,34 @@
-<p>home works!</p>
+<section class="hero is-info is-bold is-fullheight-with-navbar">
+  <div class="hero-body">
+  <div class="container">
+    <section class="hero">
+				<div id="motto"
+					 class="motto">
+					..
+					<mat-icon class="dark-icon icon-space">construction</mat-icon>
+				</div>
+				<div class="hero-inner">
+					<h1>Hello visitor, I'm Jia Wei Ho</h1>
+					<hr>
+					<p>Software Engineer as work and Full-stack developer</p>
+					<span class="empty-spacer"></span>
+
+				</div>
+				<div class="scroll-down">
+					<button mat-button
+							color="primary"
+							aria-label="Scroll down"
+							(click)="scrollToSection('about')">
+						<mat-icon class="dark-icon">expand_more</mat-icon>
+					</button>
+        </div>
+        
+        <div>
+          <app-about id="about"
+                 #about></app-about>
+        </div>
+
+			</section>
+  </div>
+  </div>
+</section>
