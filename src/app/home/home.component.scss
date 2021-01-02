@@ -1,0 +1,46 @@
+.full-screen {
+  /* width: 100vw; */
+  height: 100vh;
+}
+
+.icon-space {
+  padding: 0 5px;
+}
+
+.motto {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex: 0.2 0 auto;
+  font-size: x-large;
+}
+
+.dark-icon {
+  color: black;
+}
+
+.scroll-down {
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
+  position: absolute;
+  bottom: 0px;
+}
+
+.sticky-nav {
+  position: sticky;
+  position: -webkit-sticky;
+  /* For macOS/iOS Safari */
+  top: 0;
+  /* Sets the sticky toolbar to be on top */
+  z-index: 1000;
+  /* Ensure that your app's content doesn't overlap the toolbar */
+}
+
+hr {
+  height: 1px;
+  width: 80%;
+  color: black;
+  background-color: black;
+  border: none;
+}
