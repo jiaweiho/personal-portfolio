@@ -8,7 +8,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   @ViewChild('about', { read: ElementRef, static: true }) about: ElementRef;
-  @ViewChild('skills', { read: ElementRef, static: true }) skills: ElementRef;
+  @ViewChild('skills', { read: ElementRef, static: true }) projects: ElementRef;
   @ViewChild('timeline', { read: ElementRef, static: true }) timeline: ElementRef;
 
   scrollToSection(section: String) {
@@ -18,8 +18,8 @@ export class HomeComponent implements OnInit {
       case 'about':
         elmRef = this.about;
         break;
-      case 'skills':
-        elmRef = this.skills;
+      case 'projects':
+        elmRef = this.projects;
         break;
       case 'timeline':
         elmRef = this.timeline;

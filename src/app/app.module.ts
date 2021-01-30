@@ -10,6 +10,12 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './home/header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './home/about/about.component';
+import { ProjectsComponent } from './home/projects/projects.component';
+import { APP_BASE_HREF, PlatformLocation } from "@angular/common";
+
+export function getBaseHref(platformLocation: PlatformLocation): string {
+  return platformLocation.getBaseHrefFromDOM();
+}
 
 @NgModule({
   declarations: [
@@ -17,7 +23,8 @@ import { AboutComponent } from './home/about/about.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +33,11 @@ import { AboutComponent } from './home/about/about.component';
     MatIconModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [{
+    provide: APP_BASE_HREF,
+    useFactory: getBaseHref,
+    deps: [PlatformLocation]
+}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

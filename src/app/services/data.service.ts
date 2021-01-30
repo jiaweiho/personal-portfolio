@@ -25,6 +25,17 @@ export class DataService {
     ) */
   }
 
+  getProjects() {
+    return [
+      {title: 'Project1', description: 'lorum dsjflkdjfksdhf'},
+      {title: 'Project2', description: 'lorum2 dsjflkdjfksdhf2'}
+    ]
+    /* return this.http.get(this.url).pipe(
+      retry(1),
+      catchError(this.handleError)
+    ) */
+  }
+
   // Error handling 
   handleError(error) {
     let errorMessage = '';
