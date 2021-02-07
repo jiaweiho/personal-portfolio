@@ -2,6 +2,10 @@
 @charset "utf-8";
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap');
 
 html, body { height: 100%; }
 
@@ -12,6 +16,7 @@ $pink: #FA7C91;
 $brown: #757763;
 $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
+$link-blue: #005eb0;
 
 $black-darkest: #000000;
 $light-blue: #ffffff;
@@ -23,7 +28,7 @@ $family-sans-serif: "Nunito", sans-serif;
 $grey-dark: $dark-blue;
 $grey-light: $beige-light;
 $primary: $purple;
-$link: $pink;
+$link: $link-blue;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
@@ -33,6 +38,8 @@ $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 
+$fa-font-path: "../webfonts";
+
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
@@ -40,8 +47,32 @@ $input-shadow: none;
 @import "../node_modules/bulma/sass/elements/container.sass";
 @import "../node_modules/bulma/sass/elements/title.sass";
 @import "../node_modules/bulma/sass/elements/image.sass";
+@import "../node_modules/bulma/sass/elements/icon.sass";
 @import "../node_modules/bulma/sass/form/_all.sass";
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
 @import "../node_modules/bulma/sass/grid/columns.sass";
+@import "../node_modules/bulma/sass/grid/tiles.sass";
+
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/v4-shims.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/icons.scss";
+
+h1.title {
+  font-family: "Titillium Web";
+  font-weight: 500;
+}
+
+h1.header.title {
+  font-family: "Raleway";
+  font-weight: 400;
+}
+.navbar-item {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 18px;
+}

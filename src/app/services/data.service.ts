@@ -18,7 +18,10 @@ export class DataService {
   }
 
   getProfileInfo() {
-    return "Hello! I'm Jia Wei Ho, a software engineer based in Malmö, Sweden. I enjoy creating things."
+    return `Hello! I'm Jia Wei Ho, a software engineer based in Malmö, Sweden. I've enjoyed creating things with code for over a decade.
+    Having graduated with Master's degree in Computer Science I've enjoyed the things. blablablablaabl. blablfalksjdhföljhaslkflas.
+    aslöfdkjölsakhdfölkasöldfknölasnfdölknaösdflknölaksndöflknaösdfnköalksdf 
+    asdflkjashdöflaösldkfnölaksndfölknasödlfknöalskndf`
     /* return this.http.get(this.url).pipe(
       retry(1),
       catchError(this.handleError)
