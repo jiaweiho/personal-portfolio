@@ -13,7 +13,8 @@ export class ProjectsComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
-    this.infoText = this.dataService.getProjects();
+    this.infoText = this.dataService.getWorkProjects();
+    this.infoText = this.dataService.getSideProjects();
   }
 
 }

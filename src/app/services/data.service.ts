@@ -18,8 +18,9 @@ export class DataService {
   }
 
   getProfileInfo() {
-    return `Hello! I'm Jia Wei Ho, a software engineer based in Malmö, Sweden. I've enjoyed creating things with code for over a decade.
-    Having graduated with Master's degree in Computer Science I've enjoyed the things. blablablablaabl. blablfalksjdhföljhaslkflas.
+    return `Hello! I'm Jia Wei Ho, a software engineer based in Malmö, Sweden. Having gotten that exciting and ancient spark
+    from BASIC language and HTML/CSS development early on it set me on a path to enjoy not only a Master degree in Computer Science, but also
+    the sweat and tears of Backend development, but also Android/Cross platform development and Frontend development. blablablablaabl. blablfalksjdhföljhaslkflas.
     aslöfdkjölsakhdfölkasöldfknölasnfdölknaösdflknölaksndöflknaösdfnköalksdf 
     asdflkjashdöflaösldkfnölaksndfölknasödlfknöalskndf`
     /* return this.http.get(this.url).pipe(
@@ -28,7 +29,18 @@ export class DataService {
     ) */
   }
 
-  getProjects() {
+  getWorkProjects() {
+    return [
+      {title: 'Project1', description: 'lorum dsjflkdjfksdhf'},
+      {title: 'Project2', description: 'lorum2 dsjflkdjfksdhf2'}
+    ]
+    /* return this.http.get(this.url).pipe(
+      retry(1),
+      catchError(this.handleError)
+    ) */
+  }
+
+  getSideProjects() {
     return [
       {title: 'Project1', description: 'lorum dsjflkdjfksdhf'},
       {title: 'Project2', description: 'lorum2 dsjflkdjfksdhf2'}

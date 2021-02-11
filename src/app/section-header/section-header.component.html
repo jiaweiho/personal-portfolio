@@ -1,0 +1,24 @@
+<section class="hero" style="margin-top: 20px;">
+  <div class="hero-body">
+  <div class="columns is-mobile">
+    <div class="column landing-caption">
+      <figure *ngIf="showProfileImage" class="image is-128x128">
+        <img  class="is-rounded lazy"
+              src="assets/images/profile.jpg"
+              data-src="assets/images/profile.jpg" 
+              alt="Profile image">
+      </figure>
+      <h1 class="title is-1 is-centered" style="padding-top: 20px">{{title}}</h1>
+      <h1 class="title is-3 is-muted">{{subtitle}}</h1>
+    </div>
+  </div>
+  <!-- <div class="scroll-down">
+    <button mat-button
+        color="primary"
+        aria-label="Scroll down"
+        (click)="scrollToSection('about')">
+      <mat-icon class="dark-icon">expand_more</mat-icon>
+    </button>
+  </div> -->
+  </div>
+</section>

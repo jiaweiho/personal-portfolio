@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './home/about/about.component';
 import { ProjectsComponent } from './home/projects/projects.component';
 import { APP_BASE_HREF, PlatformLocation } from "@angular/common";
+import { SectionHeaderComponent } from './section-header/section-header.component';
 
 export function getBaseHref(platformLocation: PlatformLocation): string {
   return platformLocation.getBaseHrefFromDOM();
@@ -24,7 +25,8 @@ export function getBaseHref(platformLocation: PlatformLocation): string {
     HeaderComponent,
     FooterComponent,
     AboutComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    SectionHeaderComponent
   ],
   imports: [
     BrowserModule,

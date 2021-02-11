@@ -2,10 +2,10 @@
 <div class="hero-head">
   <nav class="navbar">
     <div class="container">
-      <div class="navbar-brand">
-        <a class="navbar-item">
+      <div class="navbar-brand" style="padding-top: 10px; line-height: 36px;">
+        <a class="navbar-item" routerLink="/home" [routerLinkActive]="['is-active']">
           <!-- <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo"> -->
-          <h1 class="header title" routerLink="home">JIA WEI HO</h1>
+          <h1 class="header title">JIA WEI HO</h1>
         </a>
         <span class="navbar-burger" data-target="navbarMenuHeroA">
           <span></span>
@@ -15,11 +15,11 @@
       </div>
       <div id="navbarMenuHeroA" class="navbar-menu">
         <div class="navbar-end">
-          <a class="navbar-item" routerLink="/projects">
-            Projects
+          <a class="navbar-item" routerLink="/projects" [routerLinkActive]="['is-active']">
+            PROJECTS
           </a>
-          <a class="navbar-item" routerLink="/work">
-            Work
+          <a class="navbar-item" routerLink="/cv" [routerLinkActive]="['is-active']">
+            CV
           </a>
           <!-- <span class="navbar-item">
             <a class="button is-primary ">

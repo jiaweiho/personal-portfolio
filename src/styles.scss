@@ -6,31 +6,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Didact+Gothic&display=swap');
 
 html, body { height: 100%; }
 
 
 // Set your brand colors
-$purple: #8A4D76;
-$pink: #FA7C91;
+$dark-blue: #3E606F;
 $brown: #757763;
 $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
-$link-blue: #005eb0;
 
-$black-darkest: #000000;
+$black: #000000;
 $light-blue: #ffffff;
-$dark-blue: #3f3f3f;
 //$green-text: rgb(96, 255, 217);
 
 // Update Bulma's global variables
-$family-sans-serif: "Nunito", sans-serif;
+$family-sans-serif: "Arimo", sans-serif;
 $grey-dark: $dark-blue;
 $grey-light: $beige-light;
-$primary: $purple;
-$link: $link-blue;
+$primary: $black;
+$link: $dark-blue;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
+$body-color: $black;
 
 // Update some of Bulma's component variables
 $body-background-color: $light-blue;
@@ -63,16 +62,31 @@ $fa-font-path: "../webfonts";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/icons.scss";
 
 h1.title {
-  font-family: "Titillium Web";
+  font-family: 'Didact Gothic';
   font-weight: 500;
 }
 
 h1.header.title {
-  font-family: "Raleway";
+  font-family: 'Didact Gothic';
   font-weight: 400;
+  color: #3E606F;
 }
 .navbar-item {
-  font-family: "Raleway";
+  font-family: 'Didact Gothic';
   font-weight: 400;
-  font-size: 18px;
+  font-size: 24px;
+}
+
+div.content-text {
+  font-family: 'Arimo';
+  font-size: 16px;
+}
+
+column.is-primary {
+  max-width: 450px;
+  
+}
+
+.hero-body {
+  padding-top: 2px;
 }
