@@ -5,16 +5,17 @@
     <section class="section">
       <div class="container">
         <h1 class="title is-3">
-          Work projects
+          Highlight projects
         </h1>
-        <ng-container *ngFor="let item of infoText">
+        <ng-container *ngFor="let item of infoPersonal">
           <div class="columns">
             <div class="column">
               <figure class="image">
-                <img src="https://bulma.io/images/placeholders/600x480.png">
+                <img *ngIf="item.img" src={{item.img}}>
+                <img *ngIf="!item.img" src="https://bulma.io/images/placeholders/600x480.png">
               </figure>
             </div>
-            <div class="column">
+            <div class="column content-text">
                 <strong>{{item.title}}</strong>
                 <br>
               <div class="box">
@@ -23,5 +24,31 @@
             </div>
           </div>
         </ng-container>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h1 class="title is-3">
+          Demo projects
+        </h1>
+        <ng-container *ngFor="let item of infoDemo">
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img *ngIf="item.img" src={{item.img}}>
+                <img *ngIf="!item.img" src="https://bulma.io/images/placeholders/600x480.png">
+              </figure>
+            </div>
+            <div class="column content-text">
+                <strong>{{item.title}}</strong>
+                <br>
+              <div class="box">
+                {{item.description}}
+              </div>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </section>
+  </div>
 </div>
-</section>

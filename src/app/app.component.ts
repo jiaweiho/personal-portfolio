@@ -16,6 +16,7 @@ export class AppComponent {
     private domSatinizer: DomSanitizer
   ) {
     console.log(`APP_BASE_HREF is ${this.baseHref}`);
+    
     this.matIconRegistry.addSvgIcon(
       'github_round',
       this.domSatinizer.bypassSecurityTrustResourceUrl('../assets/icons/github-round.svg')
@@ -23,6 +24,10 @@ export class AppComponent {
     this.matIconRegistry.addSvgIcon(
       `linkedin_round`,
       this.domSatinizer.bypassSecurityTrustResourceUrl('../assets/icons/linkedin-round.svg')
+    );
+    this.matIconRegistry.addSvgIcon(
+      `mail_round`,
+      this.domSatinizer.bypassSecurityTrustResourceUrl('../assets/icons/mail-round.svg')
     );
   }
 

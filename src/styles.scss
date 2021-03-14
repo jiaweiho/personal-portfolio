@@ -1,11 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @charset "utf-8";
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Didact+Gothic&display=swap');
 
 html, body { height: 100%; }
@@ -54,12 +49,12 @@ $fa-font-path: "../webfonts";
 @import "../node_modules/bulma/sass/grid/columns.sass";
 @import "../node_modules/bulma/sass/grid/tiles.sass";
 
-@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+/* @import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/v4-shims.scss";
-@import "../node_modules/@fortawesome/fontawesome-free/scss/icons.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/icons.scss"; */
 
 h1.title {
   font-family: 'Didact Gothic';
