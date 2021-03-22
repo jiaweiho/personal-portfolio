@@ -7,22 +7,35 @@
         <h1 class="title is-3">
           Highlight projects
         </h1>
-        <ng-container *ngFor="let item of infoPersonal">
+        <ng-container *ngFor="let item of highlightProjects" class="block2">
           <div class="columns">
             <div class="column">
               <figure class="image">
                 <img *ngIf="item.img" src={{item.img}}>
-                <img *ngIf="!item.img" src="https://bulma.io/images/placeholders/600x480.png">
+                <img *ngIf="!item.img" src="https://bulma.io/images/placeholders/480x320.png">
               </figure>
             </div>
             <div class="column content-text">
-                <strong>{{item.title}}</strong>
-                <br>
-              <div class="box">
+                <div class="subtitle is-6">{{item.year}}</div>
+                <h2 class="title is-4">{{item.title}}</h2>
+                <h2 class="subtitle is-5">{{item.subtitle}}</h2>
+              <div class="block">
                 {{item.description}}
+              </div>
+              <div class="techstack-content">
+                <ul *ngFor="let elem of item.techstack; let i = index">
+                  <li class="">
+                    <span class="icon fa-stack">
+                      <!-- <i class="fas fa-circle fa-stack-2x custom-circle"></i> -->
+                      <i class="{{elem.iconstyle}} fa-stack-1x {{elem.icon}} custom-icon"></i>
+                    </span>
+                    <span>{{elem.name}}</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
+          <hr>
         </ng-container>
       </div>
     </section>
@@ -31,22 +44,35 @@
         <h1 class="title is-3">
           Demo projects
         </h1>
-        <ng-container *ngFor="let item of infoDemo">
+        <ng-container *ngFor="let item of demoProjects">
           <div class="columns">
-            <div class="column">
+            <div class="column is-two-fifths">
               <figure class="image">
                 <img *ngIf="item.img" src={{item.img}}>
-                <img *ngIf="!item.img" src="https://bulma.io/images/placeholders/600x480.png">
+                <img *ngIf="!item.img" src="https://bulma.io/images/placeholders/480x320.png">
               </figure>
             </div>
             <div class="column content-text">
-                <strong>{{item.title}}</strong>
-                <br>
-              <div class="box">
+              <div class="subtitle is-6">{{item.year}}</div>
+              <h2 class="title is-4">{{item.title}}</h2>
+              <h2 class="subtitle is-5">{{item.subtitle}}</h2>
+              <div class="block">
                 {{item.description}}
+              </div>
+              <div class="techstack-content">
+                <ul *ngFor="let elem of item.techstack; let i = index">
+                  <li class="">
+                    <span class="icon fa-stack">
+                      <!-- <i class="fas fa-circle fa-stack-2x custom-circle"></i> -->
+                      <i class="{{elem.iconstyle}} fa-stack-1x {{elem.icon}} custom-icon"></i>
+                    </span>
+                    <span>{{elem.name}}</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
+          <hr>
         </ng-container>
       </div>
     </section>

@@ -49,12 +49,12 @@ $fa-font-path: "../webfonts";
 @import "../node_modules/bulma/sass/grid/columns.sass";
 @import "../node_modules/bulma/sass/grid/tiles.sass";
 
-/* @import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/v4-shims.scss";
-@import "../node_modules/@fortawesome/fontawesome-free/scss/icons.scss"; */
+@import "../node_modules/@fortawesome/fontawesome-free/scss/icons.scss";
 
 h1.title {
   font-family: 'Didact Gothic';
@@ -66,6 +66,16 @@ h1.header.title {
   font-weight: 400;
   color: #3E606F;
 }
+
+h2.title {
+  font-family: 'Didact Gothic';
+  font-weight: 400;
+}
+h2.subtitle {
+  font-family: 'Didact Gothic';
+  font-weight: 300;
+}
+
 .navbar-item {
   font-family: 'Didact Gothic';
   font-weight: 400;
@@ -74,7 +84,7 @@ h1.header.title {
 
 div.content-text {
   font-family: 'Arimo';
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 column.is-primary {
@@ -84,4 +94,20 @@ column.is-primary {
 
 .hero-body {
   padding-top: 2px;
+}
+
+.box-style {
+  margin-bottom: 0.4rem;
+}
+
+.block:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.block2:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+hr {
+  background-color: #ebebeb;
 }

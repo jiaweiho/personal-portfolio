@@ -28,53 +28,60 @@ export class DataService {
     ) */
   }
 
-  getPersonalProjects() {
+  getHighlightProjects() {
     return [
       {
-        title: 'Personal Portfolio - Showcase my experience', 
+        title: 'Personal Portfolio', 
+        subtitle: 'Showcase my experience',
         description: `Building a portfolio that uses angular which I've been accustomed with from work. The project gives me opportunity for exploring simple front-end things 
           e.g. sass because of its flexibility to customize bulma variables, webpack and github pages for making it practically efficient and simple.`,
         year: 2021,
-        techstack: 'angular, sass, bulma, github-pages'
+        techstack: 'Angular, SASS, Bulma, AWS, FontAwesome, Amplify',
+        img: 'homepage_screen.png'
       },
       {
-        title: 'Web Manuals International - FAA Importer', 
+        title: 'FAA Importer', 
+        subtitle: 'Created from scratch for Web Manuals International AB',
         description: `I led and created a project for importing several FAA Compliance libraries for the company. 
           As of latest note it imports and keeps 21 of these libraries regularly updated. Deployed and working in AWS deployed environment with Fargate, Lambda and Cloudwatch`,
-        techstack: 'nodejs, xml-parsing, aws, rest',
+        techstack: 'Node.js, Express, AWS, Java',
         year: 2017,
         img: 'wm.png'
       },
       {
-        title: 'Proposal App - Used for my proposal', 
+        title: 'Proposal App', 
+        subtitle: 'Used for my proposal',
         description: `App developed with the purpose of proposing to my wife. An interesting small project with Ionic framework. I wanted an app quick and as pretty as 
           possible and it worked surprisingly well looking at how little setup time to finish it was for me.`,
         year: 2017,
-        techstack: 'ionic',
-        img: 'proposalapp.png'
+        techstack: 'Ionic, Photoshop',
+        img: 'proposal_screen.png'
       },
       {
-        title: 'Salama - Connect and help refugees and locals', 
+        title: 'Salama App', 
+        subtitle: 'Connect and help refugees and locals',
         description: `I participated in a team of two other developers to create an app born from an idea from scratch. 
           I also participated with one other developer in Hackathon in Helsinki with this idea. The project was a challenge because
           of the remote located co-workers from Finland. `,
         year: 2015,
-        techstack: 'android, react-native, redux, firebase, invision',
-        img: 'salama.jpeg'
+        techstack: 'Android, React Native, Redux, Firebase, InVision',
+        img: 'salama_screen.png'
       },
       {
-        title: 'Verisure - Further development of Android app', 
+        title: 'Sales App', 
+        subtitle: 'Further development of Android app for Verisure Innovation AB',
         description: `I was assigned to take over development and maintanence of a sales app. The initial journey allowed me to 
           develop it further e.g. showing sales material.`,
         year: 2014,
-        techstack: 'android, tablet ui, file io, picasso',
-        img: 'verisure.jpeg'
+        techstack: 'Android, TabletUI, File IO, Picasso',
+        img: 'verisure_screen.png'
       },
       {
-        title: 'TaxiCaller - Help as intern',
+        title: 'Taxi App',
+        subtitle: 'Assist the company TaxiCaller as an intern',
         description: `After graduating I got the honor to help out with further development of the company startup app.`,
         year: 2011,
-        techstack: 'android, gps, maps, facebook api'
+        techstack: 'Android, GPS, Maps, Facebook API'
       }
     ]
     /* return this.http.get(this.url).pipe(
@@ -87,22 +94,22 @@ export class DataService {
     return [
       {
         title: 'Fullstack demo with React and Nodejs', 
-        description: 'Played around with React, Redux, Nodejs and postgres',
+        description: 'Project idea to with login and account and eventually e-commerce',
         year: 2021,
-        techstack: 'react, redux, nodejs, postgres, bulma, sass',
-        img: 'lifestyle.png'
+        techstack: 'React, Redux, Node.js, PostGres, Bulma, SASS',
+        img: 'lifestyle_screen.png'
       },
       {
         title: 'Social app idea', 
         description: 'Social app idea that only allowed me to look at Flutter at a short glance.',
         year: 2019,
-        techstack: 'flutter'
+        techstack: 'Flutter'
       },
       {
         title: 'Note taking app', 
         description: `Hobby project that approches note taking differently. This project involved image handling, social features and evernote integration.`,
         year: 2016,
-        techstack: 'android, file io, evernote api, mysqlite'
+        techstack: 'Android, File IO, Evernote API, MySQLite'
       }
     ]
     /* return this.http.get(this.url).pipe(
