@@ -7,6 +7,12 @@
   font-size: 3.2rem;
 }
 
+.link-icon {
+  text-align: left;
+}
+.link-icon {
+  text-align: left;
+}
 .custom-icon {
   padding-left:3px;
   font-size: 1.4rem;
@@ -36,4 +42,8 @@ ul li{
 img {
   max-height: 30rem;
   object-fit: contain;
+}
+
+.is-clickable {
+  cursor: pointer !important;
 }

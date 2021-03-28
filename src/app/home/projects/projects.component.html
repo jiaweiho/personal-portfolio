@@ -18,13 +18,21 @@
             <div class="column content-text">
                 <div class="subtitle is-6">{{item.year}}</div>
                 <h2 class="title is-4">{{item.title}}</h2>
-                <h2 class="subtitle is-5">{{item.subtitle}}</h2>
+                <h2 class="subtitle is-5">
+                  {{item.subtitle}}
+                  <ng-container *ngIf="item.link">
+                    <span class="icon fa-stack">
+                      <!-- <i class="fas fa-circle fa-stack-2x custom-circle"></i> -->
+                      <a href={{item.link}} target="_blank"><i class="fab fa-stack-1x fa-github link-icon"></i></a>
+                    </span>
+                  </ng-container>
+                </h2>
               <div class="block">
                 {{item.description}}
               </div>
               <div class="techstack-content">
                 <ul *ngFor="let elem of item.techstack; let i = index">
-                  <li class="">
+                  <li>
                     <span class="icon fa-stack">
                       <!-- <i class="fas fa-circle fa-stack-2x custom-circle"></i> -->
                       <i class="{{elem.iconstyle}} fa-stack-1x {{elem.icon}} custom-icon"></i>
@@ -55,7 +63,15 @@
             <div class="column content-text">
               <div class="subtitle is-6">{{item.year}}</div>
               <h2 class="title is-4">{{item.title}}</h2>
-              <h2 class="subtitle is-5">{{item.subtitle}}</h2>
+              <h2 class="subtitle is-5">
+                {{item.subtitle}}
+                <ng-container *ngIf="item.link">
+                  <span class="icon fa-stack">
+                    <!-- <i class="fas fa-circle fa-stack-2x custom-circle"></i> -->
+                    <a href={{item.link}} target="_blank"><i class="fab fa-stack-1x fa-github link-icon"></i></a>
+                  </span>
+                </ng-container>
+              </h2>
               <div class="block">
                 {{item.description}}
               </div>
