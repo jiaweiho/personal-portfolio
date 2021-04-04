@@ -8,7 +8,7 @@ const routes: Routes = [{ path: '', redirectTo: 'home', pathMatch: 'full' },
 { path: 'projects', component: ProjectsComponent }];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
