@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { DataService } from '../../services/data.service';
 
 @Component({
@@ -7,6 +7,8 @@ import { DataService } from '../../services/data.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  @ViewChild('navBurger') navBurger: ElementRef;
+  @ViewChild('navMenu') navMenu: ElementRef;
 
   constructor(private dataService: DataService) { }
 
@@ -16,5 +18,10 @@ export class HeaderComponent implements OnInit {
   downloadResume() {
     window.open(this.dataService.getResumeFilePath(), '_blank');
   }
+
+  toggleNavbar() {
+    this.navBurger.nativeElement.classList.toggle('is-active');
+    this.navMenu.nativeElement.classList.toggle('is-active');
+}
 
 }
