@@ -30,6 +30,12 @@
               <div class="block">
                 {{item.description}}
               </div>
+              <article class="message is-dark">
+                <div class="message-body" style="font-style: italic">
+                  <strong>{{item.quotetitle}}</strong><br>
+                  <q>{{item.challenge}}</q>
+                </div>
+              </article>
               <div class="techstack-content">
                 <ul *ngFor="let elem of item.techstack; let i = index">
                   <li>
