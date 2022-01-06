@@ -15,8 +15,6 @@ export class AppComponent {
     private matIconRegistry: MatIconRegistry,
     private domSatinizer: DomSanitizer
   ) {
-    console.log(`APP_BASE_HREF is ${this.baseHref}`);
-    
     this.matIconRegistry.addSvgIcon(
       'github_round',
       this.domSatinizer.bypassSecurityTrustResourceUrl('../assets/icons/github-round.svg')

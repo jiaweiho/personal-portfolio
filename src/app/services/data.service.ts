@@ -22,7 +22,7 @@ export class DataService {
   }
 
   getProfileInfo() {
-    return `Hello! I'm Jia Wei Ho, a software engineer based in Malmö, Sweden. Having gotten that exciting and ancient spark
+    return `Hello! I'm Jia Wei Ho, a software engineer based in Stockholm, Sweden. Having gotten that exciting and ancient spark
     from BASIC language and HTML/CSS development early on it set me on a path to enjoy not only a Master degree in Computer Science, but also
     the sweat and tears of software engineering. I've had backend development, Android/Cross platform development and Frontend development. 
     I am in constant pursuit of getting more knowledge about languages, frameworks, software design and cloud deployments. `
