@@ -36,6 +36,19 @@ export class DataService {
   getHighlightProjects() {
     return [
       {
+        title: 'Rewards integration for gaming platform', 
+        subtitle: 'Worked on two projects of similar integration for G-Loot',
+        description: `Worked as backend developer to integrate an existing microservice. Led and developed the project in Tournaments team and Brawls team.
+          It gave me good independency and collaboration with backend developer, frontend developer, producer and operations people. It involved understanding 
+          the rewards structure that was in place and integrating to a new rewards microservice.`,
+        challenge: `Understanding the full domain of tournaments in order to develop, verify and test the code was a true challenge.`,
+        quotetitle: 'Highlights',
+        year: 2022,
+        techstack: 'Java, Spring, Kafka, Google Cloud, PostgreSQL, Flyway migration',
+        img: 'tournaments_screen.png',
+        external: 'https://gloot.com'
+      },
+      {
         title: 'Personal Portfolio', 
         subtitle: 'Showcase my experience',
         description: `Building a portfolio that uses angular which I've been accustomed with from work. The project gives me opportunity for exploring simple front-end things 
@@ -60,7 +73,8 @@ export class DataService {
         quotetitle: 'Highlight',
         techstack: 'Node.js, Express, AWS, Java',
         year: 2017,
-        img: 'wm.png'
+        img: 'wm.png',
+        external: 'https://webmanuals.com'
       },
       {
         title: 'Proposal App', 
@@ -96,7 +110,8 @@ export class DataService {
         quotetitle: 'True hardwork and patience',
         year: 2013,
         techstack: 'Android, TabletUI, File IO, Picasso',
-        img: 'verisure_screen.png'
+        img: 'verisure_screen.png',
+        external: 'https://verisure.com'
       },
       {
         title: 'Taxi App',
@@ -118,6 +133,17 @@ export class DataService {
 
   getDemoProjects() {
     return [
+      {
+        title: 'Electrical car demo', 
+        subtitle: 'To experiment with fast in-memory search',
+        description: `This was an interesting project idea to experiment with Redis and NextJS. It gave me a fresh start with getting started with Redis Cloud, 
+        handling more complex relationship between objects in Redis, especially with the help of Redis JSON it became an interesting way of using hash. Redis Search 
+        was also installed as a module in Redis Cloud.`,
+        year: 2022,
+        techstack: 'Redis, Next.js, React',
+        img: 'electrical_screen.png',
+        link: 'https://github.com/jiaweiho/electrical-journey'
+      },
       {
         title: 'Fullstack demo', 
         subtitle: 'To experiment with e-commerce as a website',

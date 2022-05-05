@@ -23,7 +23,13 @@
                   <ng-container *ngIf="item.link">
                     <span class="icon fa-stack">
                       <!-- <i class="fas fa-circle fa-stack-2x custom-circle"></i> -->
-                      <a href={{item.link}} target="_blank"><i class="fab fa-stack-1x fa-github link-icon"></i></a>
+                      <ng-container *ngIf="item.link"><a href={{item.link}} target="_blank"><i class="fab fa-stack-1x fa-github link-icon"></i></a></ng-container>
+                    </span>
+                  </ng-container>
+                  <ng-container *ngIf="item.external">
+                    <span class="icon fa-stack">
+                      <!-- <i class="fas fa-circle fa-stack-2x custom-circle"></i> -->
+                      <ng-container *ngIf="item.external"><a href={{item.external}} target="_blank"><i class="fas fa-stack-1x fa-link link-icon"></i></a></ng-container>
                     </span>
                   </ng-container>
                 </h2>
