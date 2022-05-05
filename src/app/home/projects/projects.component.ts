@@ -40,6 +40,13 @@ export class ProjectsComponent implements OnInit {
     "sass": { name: "fa-css3-alt", class: "fab" },
     "tabletui": { name: "fa-tablet-alt", class: "fas" },
     "rest": { name: "fa-code", class: "fas" },
+    "spring": { name: "fa-code", class: "fas" },
+    "kafka": { name: "fa-code-branch", class: "fas" },
+    "google cloud": { name: "fa-google", class: "fab"},
+    "postgresql": { name: "fa-database", class: "fas"},
+    "flyway migration": { name: "fa-database", class: "fas"},
+    "redis": { name: "fa-database", class: "fas"},
+    "next.js": { name: "fa-code", class: "fas"},
   };
 
   constructor(private dataService: DataService) { }
@@ -47,14 +54,15 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
     this.highlightProjects = this.dataService.getHighlightProjects();
     this.highlightProjects.filter(item => (item['img'])).forEach((item) => {
-      item['img'] = `assets/images/${item['img']}`;      
+      item['img'] = `assets/images/${item['img']}`;
     });
-    this.createTechStackInfo(this.highlightProjects);    
+    this.createTechStackInfo(this.highlightProjects);
     
     this.demoProjects = this.dataService.getDemoProjects();
     this.demoProjects.filter(item => (item['img'])).forEach((item) => {
       item['img'] = `assets/images/${item['img']}`;
     });
+    
     this.createTechStackInfo(this.demoProjects);
   }
 
