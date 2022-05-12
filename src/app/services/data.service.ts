@@ -18,7 +18,7 @@ export class DataService {
   }
 
   getResumeFilePath() {
-    return '/assets/CV-2021-june.pdf';
+    return '/assets/CV-2022-may.pdf';
   }
 
   getProfileInfo() {
